@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediumish</title>
+    <link rel="stylesheet" href="./assets/css/MainPage.css">
+    <script src="./assets/js/LogButton.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Mediumish</div>
+        <nav>
+            <ul>
+                <li><a href="#">Write</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#" class="btn">Get started</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="bg-image"></div>
+    <main>
+        <section class="mainpart">
+            <div class="mainpart-text">
+                <h1>Mediumish</h1>
+                <p>A place to read, write news</p>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <h1>Sign in to Mediumish</h1>
+                        <input type="email" id="email" placeholder="Username" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <button class="sign-in-btn">Sign In</button>
+                        <p>Don't have an account? <a href="#">Sign up</a></p>
+                    </div>
+                </div>
+                <button onclick="togglePopup()">Start Reading</button>                
+            </div>
+            <div class="hero-image">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
