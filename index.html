@@ -1,48 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mediumish</title>
-    <link rel="stylesheet" href="./assets/css/MainPage.css">
-    <script src="./assets/js/LogButton.js"></script>
-</head>
-<body>
-    <header>
-        <div class="logo">Mediumish</div>
-        <nav>
-            <ul>
-                <li><a href="#">Write</a></li>
-                <li><a href="#">Sign in</a></li>
-                <li><a href="#" class="btn">Get started</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="bg-image"></div>
-    <main>
-        <section class="mainpart">
-            <div class="mainpart-text">
-                <h1>Mediumish</h1>
-                <p>A place to read, write news</p>
-                <div class="popup" id="popup-1">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup()">&times;</div>
-                        <h1>Sign in</h1>
-                        <input type="email" id="email" placeholder="Username" required>
-                        <input type="password" id="password" placeholder="Password" required>
-                        <button class="sign-in-btn">Sign In</button>
-                        <p>Don't have an account? <a href="#">Sign up</a></p>
-                        <p>Or</p>
-                        <p><a href="#" class="continue-guest-link" onclick="continueAsGuest()">Continue as Guest</a></p>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <!--Using google font, named "Ubuntu" with Bold 700-->
+        <title>News Website</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                NEWS
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Technology</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="topHeadLines">
+            <div class="left">
+                <div class="title">
+                    <h2>Breaking News</h2>
+                </div>
+                <div class="img" id="breakingImg"></div>
+                <div class="text" id="breakingNews">
+                    <div class="title">
+                        <h2>Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!</h2>
+                    </div>
+                    <div class="description">
+                        Lopem ipsum dolor sir emat conswuefwef. woiejfw. 
                     </div>
                 </div>
-                <button onclick="togglePopup()">Start Reading</button>                
             </div>
-            <div class="hero-image">
+            <div class="right">
+                <div class="title">
+                    <h2>Top Headlines</h2>
+                </div>
+                <div class="topNews">
+                    <div class="news">
+                        <div class="img"></div>
+                        <div class="text">
+                            <div class="title">
+                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="img"></div>
+                        <div class="text">
+                            <div class="title">
+                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="img"></div>
+                        <div class="text">
+                            <div class="title">
+                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="img"></div>
+                        <div class="text">
+                            <div class="title">
+                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="img"></div>
+                        <div class="text">
+                            <div class="title">
+                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-</body>
+        </div>
+        <div class="page2">
+            <div class="news" id="sportsNews">
+                <div class="title">
+                    <h2>Sports News</h2>
+                </div>
+                <div class="newsBox">
+                    <div class="newsCard">
+                        <div class="img"></div>
+                        <div class="text">
+                            <div class="title">
+                                <p>Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/index.js"></script>
+    </body>
 </html>

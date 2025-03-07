@@ -1,0 +1,197 @@
+/*General Layout*/
+*{
+    /*reset auto margin of browser*/
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0b0b11;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%; /*make body fill the page*/
+    min-height: 100vh; /*ensure content go all the page*/
+    color: white;
+}
+
+/*Scroll bar behaviour*/
+::-webkit-scrollbar{
+    width: 8px; 
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 100px; 
+}
+.topHeadLines .right .topNews::-webkit-scrollbar{
+    width: 6px; 
+}
+.topHeadLines .right .topNews::-webkit-scrollbar-thumb{
+    background-color: #777; 
+}
+/*-------------------*/
+
+.header{
+    position: fixed;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px; /*spacing 20px top and bottom, 50px left and right*/
+    background-color: #0b0b11;
+}
+.logo{
+    font-size: 45px;
+    font-weight: 700; 
+    cursor: pointer;
+}
+
+/*Navigation Bar*/
+nav ul{
+    display: flex; /*Disabling stacked up items in header*/
+}
+nav ul li{
+    list-style: none; /*Disabling stacked up items in unordered list*/
+    margin: 0 15px; 
+    padding: 0 10px; 
+    border-left: 1px solid black; 
+    border-left: 1px solid black; 
+    transition: 0.3s; 
+}
+nav ul li:hover{
+    border-left: 1px solid white; 
+    border-left: 1px solid white; 
+}
+nav ul li a{ /*styling for items' text in navigation bar*/
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px; /*modify space between letter, instead of home, now is h o m e*/
+}
+
+/*TopHeadLines*/
+.topHeadLines{
+    /*Bring down the lopend things instead just staying in the place of logo*/
+    padding: 100px 50px 50px; 
+    width: 100%;
+    display: grid; 
+    /*using grid to fix location for the topHeadLines*/
+    grid-template-columns: 1.5fr 1fr;
+}
+.topHeadLines .left{
+    padding: 10px 30px;
+    /*background-color: #999*/;
+}
+.topHeadLines .left > .title{
+    font-size: 20px; 
+    padding: 15px; 
+    /*Increase size and space around title*/
+    text-align: center;   
+}
+.topHeadLines .left .img{
+    width: 100%; 
+    height: 400px; 
+    background-color: #a04;
+}
+.topHeadLines .left .text{
+    padding: 20px 15px 10px; 
+}
+.topHeadLines .left .text .title h2{
+    font-size: 20px; 
+    letter-spacing: 1px;
+    display: inline; 
+    cursor: pointer; /*the mouse symbol becomes pointer when hover to it*/
+}
+.topHeadLines .left .text .title h2:hover{
+    text-decoration: underline; /*when hovering to it, the underline appears*/
+}
+.topHeadLines .left .text .description{
+    font-size: 15px; 
+    margin-top: 10px; 
+    color: #aaa;
+    letter-spacing: 1px; 
+}
+.topHeadLines .right{
+    padding: 10px; 
+    width: 1005;
+    height: 500px; 
+    /*background-color: #999; */
+}
+.topHeadLines .right > .title{
+    font-size: 20px; 
+    padding: 15px; 
+    /*Increase size and space around title*/
+    text-align: center;   
+}
+.topHeadLines .right .topNews{
+    padding: 7px; 
+    height: 85%;
+    border: 1px solid #fff; 
+    border-radius: 4px;
+    overflow-y: scroll; /*Changing to scroll behavior, using only y axis*/ 
+}
+.topHeadLines .right .topNews .news{
+    display: grid; 
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 20px; /*spacing between post at the Top Headlines section*/
+}
+.topHeadLines .right .topNews .news .img{
+    width: 170px; 
+    height: 120px; 
+    background-color: #a04;
+}
+.topHeadLines .right .topNews .news .text{
+    margin-inline: 10px; 
+}
+.topHeadLines .right .topNews .news .text .title{
+    cursor: pointer;
+}
+.topHeadLines .right .topNews .news .text .title:hover{
+    text-decoration: underline;
+}
+
+/*Page 2*/
+.page2{
+    width: 100%; 
+    background-color: #16161d;
+    min-height: 100vh;
+    padding: 50px;
+}
+.page2 .news{
+    padding: 30px 0; 
+}
+.page2 .news > .title h2{
+    font-size: 40px; 
+    cursor: pointer; 
+    display: inline;
+}
+.page2 .news > .title h2:hover{
+    text-decoration: underline;
+}
+.page2 .news .newsBox{
+    width: 100%; 
+    background-color: #999;
+    margin-top: 20px;
+}
+.page2 .news .newsBox .newsCard{
+    width: 200px;
+    min-height: 20px; 
+    background-color: #070;
+}
+.page2 .news .newsBox .newsCard .img{
+    width: 100%; 
+    height: 150px; 
+    background-color: #a04;
+}
+.page2 .news .newsBox .newsCard .text{
+    padding: 10px; 
+}
+.page2 .news .newsBox .newsCard .text .title p{
+    font-size: 15px; 
+    display: inline; 
+    cursor: pointer; 
+}
+.page2 .news .newsBox .newsCard .title p:hover{
+    text-decoration: underline; 
+}
