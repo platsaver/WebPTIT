@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - News Archive</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel='stylesheet' href="/assets/css/login.css">
+        <script src="/assets/js/credentialChecking.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <div class="nav container">
+                <!--Logo-->
+                <a href="/pages/main_function/category.html" class="logo">News Archive</a>
+                <!--Login-->
+                <a href="/pages/main_function/login.html" class="login">Login/Register</a>
+            </div>
+        </header>
+
+        <!--Login Form-->
+        <section class="login-container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-box">
+                        <input type="text" name="username" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="/pages/main_function/register.html">Register now</a></p>
+                    </div>
+                </form>
+                <p id="error-message" style="color: red; display: none;">Invalid username or password.</p>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <div class="footer container">
+            <p>&#169; This is just a demo:</p>
+            <div class="social">
+                <a href="https://github.com/platsaver"><i class="bx bxl-github"></i></a>
+                <a href="https://t.me/chonkykind"><i class='bx bxl-telegram' ></i></a>
+            </div>
+        </div>
+    </body>
+</html>

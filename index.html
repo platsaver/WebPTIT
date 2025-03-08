@@ -1,110 +1,71 @@
 <!doctype html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-with, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-        <!--Using google font, named "Ubuntu" with Bold 700-->
-        <title>News Website</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - News Archive</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel='stylesheet' href="/assets/css/login.css">
+        <script src="/assets/js/credentialChecking.js"></script>
+        <script src="/assets/js/sliderLogic.js"></script>
+        <link rel="stylesheet" href="assets/css/sliderStyling.css">
     </head>
     <body>
-        <div class="header">
-            <div class="logo">
-                NEWS
+        <!--Header-->
+        <header>
+            <div class="nav container">
+                <!--Logo-->
+                <a href="/pages/main_function/category.html" class="logo">News Archive</a>
+                <!--Login-->
+                <a href="/pages/main_function/login.html" class="login">Login/Register</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Social</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Technology</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="topHeadLines">
-            <div class="left">
-                <div class="title">
-                    <h2>Breaking News</h2>
-                </div>
-                <div class="img" id="breakingImg"></div>
-                <div class="text" id="breakingNews">
-                    <div class="title">
-                        <h2>Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!</h2>
+        </header>
+        
+        <!--News Slider-->
+        <section class="news-slider">
+            <div class="slider-container">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="/assets/img/post1.jpg" alt="Post 1">
+                    <div class="slide-content">
+                        <h2 class="category">Xã hội</h2>
+                        <a href="/pages/main_function/post1.html" class="post-title">Nhiều chuyến bay Việt bị ảnh hưởng do đình công tại Đức</a>
+                        <p class="post-description">Do ảnh hưởng từ hoạt động đình công tại Đức từ 0h đến 23h59 ngày 10/3 (giờ địa phương), các chuyến bay của Vietnam Airlines sẽ thay đổi lịch khai thác.</p>
                     </div>
-                    <div class="description">
-                        Lopem ipsum dolor sir emat conswuefwef. woiejfw. 
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="/assets/img/post2.jpg" alt="Post 2">
+                    <div class="slide-content">
+                        <h2 class="category">Pháp luật</h2>
+                        <a href="/pages/main_function/post2.html" class="post-title">Mang vàng giả vào lừa tiệm vàng, người đàn ông bị bắt tại trận</a>
+                        <p class="post-description">Mang sợi dây chuyền vàng giả vào tiệm vàng cầm 80 triệu đồng, Hoàng Văn Bàng đã bị dân vây bắt khi định bỏ chạy.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="/assets/img/post3.jpg" alt="Post 3">
+                    <div class="slide-content">
+                        <h2 class="category">Đời sống</h2>
+                        <a href="/pages/main_function/post3.html" class="post-title">Chàng trai 18 tuổi lông mọc đầy mặt lập kỷ lục Guinness</a>
+                        <p class="post-description">Một chàng trai 18 tuổi đến từ bang Madhya Pradesh (Ấn Độ) có 95% khuôn mặt được bao phủ bởi lông đã lập Kỷ lục Thế giới Guinness.</p>
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <div class="title">
-                    <h2>Top Headlines</h2>
-                </div>
-                <div class="topNews">
-                    <div class="news">
-                        <div class="img"></div>
-                        <div class="text">
-                            <div class="title">
-                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <div class="img"></div>
-                        <div class="text">
-                            <div class="title">
-                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <div class="img"></div>
-                        <div class="text">
-                            <div class="title">
-                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <div class="img"></div>
-                        <div class="text">
-                            <div class="title">
-                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news">
-                        <div class="img"></div>
-                        <div class="text">
-                            <div class="title">
-                                Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Slider Controls -->
+            <button class="prev-slide"><i class='bx bx-chevron-left'></i></button>
+            <button class="next-slide"><i class='bx bx-chevron-right'></i></button>
+        </section>
+
+        <!--Footer-->
+        <div class="footer container">
+            <p>&#169; This is just a demo:</p>
+            <div class="social">
+                <a href="https://github.com/platsaver"><i class="bx bxl-github"></i></a>
+                <a href="https://t.me/chonkykind"><i class='bx bxl-telegram' ></i></a>
             </div>
         </div>
-        <div class="page2">
-            <div class="news" id="sportsNews">
-                <div class="title">
-                    <h2>Sports News</h2>
-                </div>
-                <div class="newsBox">
-                    <div class="newsCard">
-                        <div class="img"></div>
-                        <div class="text">
-                            <div class="title">
-                                <p>Lopem ipsum dolor sit amet consectetur elit. Veniam, assumenda!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="/assets/js/index.js"></script>
     </body>
 </html>
