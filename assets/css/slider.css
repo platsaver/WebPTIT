@@ -1,0 +1,117 @@
+/* Slider Section */
+.slider-section {
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.3s linear;
+    position: relative;
+}
+
+.slide-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+}
+
+.slide-content .post-title {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.slide-content{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.headlines-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.headline {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px; 
+}
+/* Navigation Buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* 60% opacity */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%; /* Makes it circular */
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0.6; /* 60% opacity */
+    transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.prev-button:hover,
+.next-button:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.prev-button {
+    left: 20px; /* Position inside the slide */
+}
+
+.next-button {
+    right: 20px; /* Position inside the slide */
+}
+
+@media (max-width: 1060px){
+    .next-button{
+        right: 30px;
+    }
+    .prev-button{
+        left: 30px;
+    }
+}
+@media (max-width: 800px){
+}
+@media (max-width: 768px){
+}
+@media (max-width: 570px){
+    .headlines-grid{
+        display: flex; 
+        flex-direction: column;
+    }
+}
+@media (max-width: 396px){
+}

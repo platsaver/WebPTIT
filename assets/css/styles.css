@@ -10,9 +10,10 @@
     box-sizing: border-box; 
 }
 
+
 :root{ 
     --container-color: #1a1e21;
-    --second-color: blue;
+    --second-color: red;
     --text-color: #172317; 
     --bg-color: #fff; 
 }
@@ -106,7 +107,7 @@ header.shadow .logo{
     color: var(--bg-color);
 }
 .login:hover{
-    background: hsl(24,98%,58%);
+    background: hsl(0, 100%, 90%);
     transition:0.3s;
 }
 
@@ -115,7 +116,8 @@ header.shadow .logo{
 .home{
     width: 100%; 
     min-height: 440px; 
-    background: var(--container-color);
+    background: url(/assets/img/flag-coat-arms-socialist-republic-vietnam-textured-background-concept-collage_610882-543.jpg);
+    opacity: 60%;
     display: grid; 
     justify-content: center;
     align-items: center;
