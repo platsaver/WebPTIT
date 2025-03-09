@@ -7,6 +7,8 @@
         <title>Mang vàng giả vào lừa tiệm vàng, người đàn ông bị bắt tại trận </title>
         <link rel="stylesheet" href="../assets/css/styles.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../assets/css/commentBox.css">
+        <script src="../assets/js/commentBox.js"></script>
         <!--JQuery-->
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     </head>
@@ -44,6 +46,17 @@
             <p class="post-text">Tuy nhiên, nhân viên tiệm vàng sau đó đã phát sợi dây là vàng giả. Sau đó, Bàng đã bỏ chạy ra phía đồng bọn chờ sẵn hòng tẩu thoát nhưng bị người dân vây bắt giao công an xử lý.</p>
             <p class="post-text"><span style="font-weight: bold">Hải Vân</span><span style="font-style: italic">(T/h)</span>, Thứ 7 ngày 8/3/2025</p>
         </section>
+        <section class="comment-section post-container">
+            <h2 class="sub-heading">Comments</h2>
+            <!-- Comment Input -->
+            <textarea id="text-area" placeholder="Write your comment here..." rows="4"></textarea>
+            <button id="btn-comment">Submit Comment</button>
+            <!-- Comment Display -->
+            <div id="comment-box">
+                <!-- Comments will be dynamically added here -->
+            </div>
+        </section>
+    </section>
         <!--Footer-->
         <div class="footer container">
             <p>&#169; This is a demo</p>

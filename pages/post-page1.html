@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nhiều chuyến bay Việt bị ảnh hưởng do đình công tại Đức</title>
         <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/commentBox.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!--JQuery-->
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="../assets/js/commentBox.js"></script>
     </head>
     <body>
         <!--Header-->
@@ -46,6 +48,17 @@
             <p class="post-text">Đại diện Vietnam Airlines cho biết, thông tin về kế hoạch khai thác sẽ được hãng thường xuyên cập nhật. Hành khách bị ảnh hưởng sẽ được hãng hỗ trợ theo đúng quy định. </p>
             <p class="post-text">Hãng hàng không cũng khuyến nghị hành khách đang có kế hoạch đến, đi, quá cảnh tại sân bay Munich, sân bay Frankfurt trong thời gian này thường xuyên theo dõi, cập nhật thông tin trên website và ứng dụng di động của Vietnam Airlines, trên Fanpage hoặc liên hệ các phòng vé, đại lý chính thức và Tổng đài chăm sóc khách hàng. </p>
             <p class="post-text"><span style="font-weight: bold">Lê Mạnh Quốc</span><span style="font-style: italic">(T/h)</span>, Thứ 7 ngày 8/3/2025</p>
+            <!-- Add this section after the post content -->
+            <section class="comment-section post-container">
+                <h2 class="sub-heading">Comments</h2>
+                <!-- Comment Input -->
+                <textarea id="text-area" placeholder="Write your comment here..." rows="4"></textarea>
+                <button id="btn-comment">Submit Comment</button>
+                <!-- Comment Display -->
+                <div id="comment-box">
+                    <!-- Comments will be dynamically added here -->
+                </div>
+            </section>
         </section>
         <!--Footer-->
         <div class="footer container">

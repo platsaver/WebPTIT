@@ -56,14 +56,14 @@
 .input-box input:valid ~ label {
     top: -10px;
     font-size: 12px;
-    color: #007bff;
+    color: red;
 }
 
 /* Login Button */
 .login-btn {
     width: 100%;
     padding: 10px;
-    background: #007bff;
+    background: red;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -73,7 +73,7 @@
 }
 
 .login-btn:hover {
-    background: #0056b3;
+    background: hsl(0, 100%, 90%);
 }
 
 /* Register Link */
@@ -84,7 +84,7 @@
 }
 
 .register-link a {
-    color: #007bff;
+    color: red;
     text-decoration: none;
 }
 
