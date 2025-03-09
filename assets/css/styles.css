@@ -46,6 +46,29 @@ section{
     margin-left: 10px;
 }
 
+/* Welcome Message and Logout Link */
+#userGreeting {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.welcome-message {
+    font-size: 16px;
+    color: #fff;
+}
+
+.logout {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logout:hover {
+    color: #ccc; /* Change color on hover */
+}
+
 /*Navigation Bar Related*/
 header{
     position: fixed; 
