@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+
+header{
+    display: flex; 
+    justify-content: space-between;
+    padding: 5px 10%; 
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block; 
+    padding: 5px 20px;
+    font-size: 1.0rem;
+}
+.nav_links li a {
+    position: relative; /* Required for pseudo-element positioning */
+    text-decoration: none; /* Remove default underline */
+    color: black; /* Default link color */
+    transition: color 0.3s linear; /* Smooth color transition */
+}
+
+.nav_links li a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust to position the underline */
+    width: 0; /* Start with no width */
+    height: 2px; /* Thickness of the underline */
+    background-color: red; /* Color of the underline */
+    transition: width 0.3s linear; /* Smooth width transition */
+}
+
+.nav_links li a:hover {
+    color: red; /* Change text color on hover */
+}
+
+.nav_links li a:hover::after {
+    width: 100%; /* Expand the underline to full width */
+}

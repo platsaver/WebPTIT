@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login - News Archive</title>
         <link rel="stylesheet" href="../../assets/css/styles.css">
+        <link rel="stylesheet" href="../../assets/css/specialNavBar.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel='stylesheet' href="../../assets/css/login.css">
         <script src="../../assets/js/credentialChecking.js"></script>
@@ -15,9 +16,18 @@
         <header>
             <div class="nav container">
                 <!--Logo-->
-                <a href="../../index.html" class="logo" style="color: black">News Archive</a>
-                <!--Login-->
-                <a href="../../pages/main_function/login.html" class="login">Login/Register</a>
+                <a href="./index.html" class="logo" style="color: black">News Archive</a>
+                    <nav>
+                        <ul class="nav_links">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a>Search</a></li>
+                            <li><a href="../../pages/main_function/index.html">Categories</a></li>
+                        </ul>
+                    </nav>
+                <!--Login/Welcome-->
+                <div id="userGreeting">
+                    <a href="../../pages/main_function/login.html" class="login" id="loginLink">Login/Register</a>
+                </div>
             </div>
         </header>
 
