@@ -4,61 +4,181 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE-Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login - News Archive</title>
+        <title>Home</title>
         <link rel="stylesheet" href="/assets/css/styles.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel='stylesheet' href="/assets/css/login.css">
-        <script src="/assets/js/credentialChecking.js"></script>
-        <script src="/assets/js/sliderLogic.js"></script>
-        <link rel="stylesheet" href="assets/css/sliderStyling.css">
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--Header-->
         <header>
             <div class="nav container">
                 <!--Logo-->
-                <a href="/pages/main_function/category.html" class="logo">News Archive</a>
+                <a href="/index.html" class="logo">News Archieve</a>
                 <!--Login-->
-                <a href="/pages/main_function/login.html" class="login">Login/Register</a>
+                <!--<a href="/pages/main_function/login.html" class="login">Login/Register</a>-->
+                <!--Login/Welcome-->
+                <div id="userGreeting">
+                    <a href="/pages/main_function/login.html" class="login" id="loginLink">Login/Register</a>
+                </div>
             </div>
         </header>
-        
-        <!--News Slider-->
-        <section class="news-slider">
-            <div class="slider-container">
-                <!-- Slide 1 -->
-                <div class="slide active">
-                    <img src="/assets/img/post1.jpg" alt="Post 1">
-                    <div class="slide-content">
-                        <h2 class="category">Xã hội</h2>
-                        <a href="/pages/main_function/post1.html" class="post-title">Nhiều chuyến bay Việt bị ảnh hưởng do đình công tại Đức</a>
-                        <p class="post-description">Do ảnh hưởng từ hoạt động đình công tại Đức từ 0h đến 23h59 ngày 10/3 (giờ địa phương), các chuyến bay của Vietnam Airlines sẽ thay đổi lịch khai thác.</p>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="slide">
-                    <img src="/assets/img/post2.jpg" alt="Post 2">
-                    <div class="slide-content">
-                        <h2 class="category">Pháp luật</h2>
-                        <a href="/pages/main_function/post2.html" class="post-title">Mang vàng giả vào lừa tiệm vàng, người đàn ông bị bắt tại trận</a>
-                        <p class="post-description">Mang sợi dây chuyền vàng giả vào tiệm vàng cầm 80 triệu đồng, Hoàng Văn Bàng đã bị dân vây bắt khi định bỏ chạy.</p>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <img src="/assets/img/post3.jpg" alt="Post 3">
-                    <div class="slide-content">
-                        <h2 class="category">Đời sống</h2>
-                        <a href="/pages/main_function/post3.html" class="post-title">Chàng trai 18 tuổi lông mọc đầy mặt lập kỷ lục Guinness</a>
-                        <p class="post-description">Một chàng trai 18 tuổi đến từ bang Madhya Pradesh (Ấn Độ) có 95% khuôn mặt được bao phủ bởi lông đã lập Kỷ lục Thế giới Guinness.</p>
-                    </div>
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home-text container">
+                <h2 class="home-title">The News Archieve</h2>
+                <span class="home-subtitle">A place for news archive</span>
+            </div>
+        </section>
+        <script src="/assets/js/index.js"></script>
+        <!--Post Filter-->
+        <div class="post-filter container">
+            <span class="filter-item active-filter" data-filter='all'>Tất cả</span>
+            <span class="filter-item" data-filter='xahoi'>Xã hội</span>
+            <span class="filter-item" data-filter='phapluat'>Pháp luật</span>
+            <span class="filter-item" data-filter='doisong'>Đời sống</span>
+        </div>
+        <!--Posts-->
+        <section class="post container">
+            <!--Post Box 1-->
+            <div class="post-box xahoi">
+                <img src="/assets/img/na-da-thuc-day-hop-tac-voi-cac-tap-doan-san-xuat-may-bay-lon-tren-the-gioi-de-nhanh-chong-tiep-nhan-them-cac-may-bay-airbus-a320neo-boeing-787-17414276896921849562171.jpg" alt="" class="post-img">
+                <h2 class="category">Xã hội</h2>
+                <a href="/pages/post-page1.html" class="post-title">
+                    Nhiều chuyến bay Việt bị ảnh hưởng do đình công tại Đức 
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Do ảnh hưởng từ hoạt động đình công tại Đức từ 0h đến 23h59 ngày 10/3 (giờ địa phương), 
+                    các chuyến bay của Vietnam Airlines sẽ thay đổi lịch khai thác.</p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/anh-annh1.webp" alt="A man named Lê Mạnh Quốc" class="profile-img">
+                    <span class="profile-name">Lê Mạnh Quốc</span>
                 </div>
             </div>
-            <!-- Slider Controls -->
-            <button class="prev-slide"><i class='bx bx-chevron-left'></i></button>
-            <button class="next-slide"><i class='bx bx-chevron-right'></i></button>
+            <!--Post Box 2-->
+            <div class="post-box phapluat">
+                <img src="/assets/img/vang-gia-17414216474981312830641-0-0-611-977-crop-17414216499411537998273.jpg" alt="" class="post-img">
+                <h2 class="category">Pháp luật</h2>
+                <a href="/pages/post-page2.html" class="post-title">
+                    Mang vàng giả vào lừa tiệm vàng, người đàn ông bị bắt tại trận
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Mang sợi dây chuyền vàng giả vào tiệm vàng cầm 80 triệu đồng, Hoàng Văn Bàng đã bị dân vây bắt khi định bỏ chạy. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/incognito-icon-browse-private-vector-600nw-1462596698.webp" alt="Anonymous user" class="profile-img">
+                    <span class="profile-name">Hải Vân</span>
+                </div>
+            </div>
+            <!--Post Box 3-->
+            <div class="post-box doisong">
+                <img src="/assets/img/chang-trai-18-tuoi-long-moc-day-mat-lap-ky-luc-guinness-17414093987452100293659-0-23-374-621-crop-17414094190651182528372.webp" alt="" class="post-img">
+                <h2 class="category">Đời sống</h2>
+                <a href="/pages/post-page3.html" class="post-title">
+                    Chàng trai 18 tuổi lông mọc đầy mặt lập kỷ lục Guinness 
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Một chàng trai 18 tuổi đến từ bang Madhya Pradesh (Ấn Độ) có 95% khuôn mặt được bao phủ bởi lông đã lập Kỷ lục Thế giới Guinness. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/incognito-icon-browse-private-vector-600nw-1462596698.webp" alt="Anonymous user" class="profile-img">
+                    <span class="profile-name">Minh Hoa</span>
+                </div>
+            </div>
+            <!--Post Box 4-->
+            <div class="post-box xahoi">
+                <img src="/assets/img/edit-hop-hdnh-tinh-tay-ninh4-1733299626199454695276-0-33-571-947-crop-1741429732119747900188.webp" alt="" class="post-img">
+                <h2 class="category">Xã hội</h2>
+                <a href="/pages/post-page4.html" class="post-title">
+                    Thủ tướng Chính phủ giao quyền Chủ tịch UBND tỉnh Tây Ninh cho ông Nguyễn Hồng Thanh  
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Thủ tướng Chính phủ ký ban hành Quyết định số 543/QĐ-TTg về việc giao quyền 
+                    Chủ tịch UBND tỉnh Tây Ninh, nhiệm kỳ 2021-2026. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/hinh1.webp" alt="A man named Nguyễn Văn Khánh" class="profile-img">
+                    <span class="profile-name">Nguyễn Văn Khánh </span>
+                </div>
+            </div>
+            <!--Post Box 5-->
+            <div class="post-box xahoi">
+                <img src="/assets/img/dsc1755-17414127802121531585983-1741415321610-17414153216982021719138-0-0-486-777-crop-1741415908205798556918.jpg" alt="" class="post-img">
+                <h2 class="category">Xã hội</h2>
+                <a href="/pages/post-page5.html" class="post-title">
+                    Phó Thủ tướng Bùi Thanh Sơn kiểm tra 4 tuyến cao tốc trọng điểm phía Bắc
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Phó Thủ tướng Bùi Thanh Sơn nêu rõ việc hoàn thành 4 dự án, với tổng chiều dài 257,5km, có ý nghĩa hết sức quan trọng. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/anh-annh1.webp" alt="" class="profile-img">
+                    <span class="profile-name">Lê Mạnh Quốc</span>
+                </div>
+            </div>
+            <!--Post Box 6-->
+            <div class="post-box xahoi">
+                <img src="/assets/img/dau-von-cuc-hue334-17414222167781693370838-137-0-1417-2048-crop-1741422293423342885633.jpg" alt="" class="post-img">
+                <h2 class="category">Xã hội</h2>
+                <a href="/pages/post-page6.html" class="post-title">
+                    Hơn 210 tấn dầu vón cục trôi dạt vào bờ biển Huế đã được thu gom, xử lý 
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription"> Sau nhiều ngày ra quân, các lực lượng ở Tp.Huế đã thu gom, xử lý đúng quy định hơn 210 tấn dầu vón cục trôi dạt vào bờ biển địa phương này. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/incognito-icon-browse-private-vector-600nw-1462596698.webp" alt="Anonymous user" class="profile-img">
+                    <span class="profile-name">Lê Kông</span>
+                </div>
+            </div>
+            <!--Post Box 7-->
+            <div class="post-box doisong">
+                <img src="/assets/img/nhat-tien-17414339622911431794436.webp" alt="" class="post-img">
+                <h2 class="category">Đời sống</h2>
+                <a href="/pages/post-page7.html" class="post-title">
+                    Nhặt tiền trên mái nhà, cậu bé bị điện giật tử vong 
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Nhặt tiền được tung lên mái nhà, cậu bé 14 tuổi bị điện giật tử vong khi chạm vào dây điện. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/incognito-icon-browse-private-vector-600nw-1462596698.webp" alt="Anonymous user" class="profile-img">
+                    <span class="profile-name">Hải Vân</span>
+                </div>
+            </div>
+            <!--Post Box 8-->
+            <div class="post-box phapluat">
+                <img src="/assets/img/danh-nguoi-1741432907125925685705.jpg" alt="" class="post-img">
+                <h2 class="category">Pháp luật</h2>
+                <a href="/pages/post-page8.html" class="post-title">
+                    Khởi tố thanh niên đánh bảo vệ ở phố đi bộ Nguyễn Huệ 
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Liên quan đến vụ bảo vệ bị đánh ở phố đi bộ Nguyễn Huệ, Tưởng Chí Huy bị Công an Tp.HCM khởi tố về tội Cố ý gây thương tích. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/incognito-icon-browse-private-vector-600nw-1462596698.webp" alt="Anonymous user" class="profile-img">
+                    <span class="profile-name">Hải Vân</span>
+                </div>
+            </div>
+            <!--Post Box 9-->
+            <div class="post-box doisong">
+                <img src="/assets/img/dien-giat-17414113371001037853692.webp" alt="" class="post-img">
+                <h2 class="category">Đời sống</h2>
+                <a href="/pages/post-page9.html" class="post-title">
+                    Vừa dùng điện thoại vừa sạc, bé gái bị điện giật tử vong 
+                </a>
+                <span class="post-date">8 March 2025</span>
+                <p class="post-decription">Một bé gái 15 tuổi đã bị điện giật tử vong do vừa dùng điện thoại vừa sạc. Cảnh sát cho biết thêm rằng trên người cô bé có vết bỏng từ dây sạc điện thoại. </p>
+                <!--Profile-->
+                <div class="profile">
+                    <img src="/assets/img/incognito-icon-browse-private-vector-600nw-1462596698.webp" alt="Anonymous user" class="profile-img">
+                    <span class="profile-name">Hải Vân</span>
+                </div>
+            </div>
         </section>
-
         <!--Footer-->
         <div class="footer container">
             <p>&#169; This is just a demo:</p>
@@ -67,5 +187,6 @@
                 <a href="https://t.me/chonkykind"><i class='bx bxl-telegram' ></i></a>
             </div>
         </div>
+        <script src="/assets/js/index.js"></script>
     </body>
 </html>
