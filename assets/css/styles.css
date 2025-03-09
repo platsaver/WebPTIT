@@ -70,6 +70,7 @@ section{
 }
 
 /*Navigation Bar Related*/
+/*Only applied at the category*/
 header{
     position: fixed; 
     top: 0; 
